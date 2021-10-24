@@ -8,8 +8,5 @@ func Provider() *schema.Provider {
 		ResourcesMap: map[string]*schema.Resource{
 			"pacman_packages": resourcePackage(),
 		},
-		DataSourcesMap: map[string]*schema.Resource{
-			"pacman_packages": pacmanPackages(),
-		},
 	}
 }
